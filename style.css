@@ -1,96 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hellartag Cinema</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hellartag Cinema</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#screenings">Screenings</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-/* Reset some default spacing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <section class="hero">
+    <h2>Bringing the Big Screen to Schools</h2>
+    <p>Movie screening experiences for schools across Kenya.</p>
+    <a href="#contact" class="btn">Book a Screening</a>
+  </section>
 
-body {
-  font-family: 'Comic Sans MS', 'Trebuchet MS', sans-serif;
-  line-height: 1.6;
-  color: #2b2ب2b;
-  background-color: #fff8e7;
-}
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Write a short paragraph here about Hellartag Cinema — who you are and why schools should choose you.</p>
+  </section>
 
-header {
-  background-color: #ff5e5e;
-  color: white;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>List what's included: equipment, film selection, setup, etc.</p>
+  </section>
 
-header h1 {
-  font-size: 1.8rem;
-}
+  <section id="screenings">
+    <h2>Recent Screenings</h2>
+    <div class="screening-grid">
+      <div class="screening-card">
+        <img src="images/screening1.jpg" alt="Screening at XYZ Primary School">
+        <h3>XYZ Primary School</h3>
+        <p>June 2026 — Screened an educational film for 200 students.</p>
+      </div>
+      <!-- Copy the block above and edit it to add each new screening -->
+    </div>
+  </section>
 
-header nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone / Email / WhatsApp — however you want schools to reach you.</p>
+  </section>
+</body>
+</html>
 
-header nav a:hover {
-  text-decoration: underline;
-}
-
-.hero {
-  background: linear-gradient(135deg, #ffd93d, #ff8a5c);
-  text-align: center;
-  padding: 80px 20px;
-  color: #222;
-}
-
-.hero h2 {
-  font-size: 2.4rem;
-  margin-bottom: 10px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 28px;
-  background-color: #ff5e5e;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  box-shadow: 0 4px 0 #c73e3e;
-}
-
-.btn:hover {
-  background-color: #ff7676;
-}
-
-section {
-  padding: 60px 40px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-section h2 {
-  margin-bottom: 15px;
-  color: #ff5e5e;
-}
-
-#about {
-  background-color: #d6f5d6;
-  border-radius: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-#services {
-  background-color: #cfe8ff;
-  border-radius: 20px;
-  margin-bottom: 30px;
-}
-
-#contact {
-  background-color: #ffe0f0;
-  border-radius: 20px;
-  margin-bottom: 30px;
-}
