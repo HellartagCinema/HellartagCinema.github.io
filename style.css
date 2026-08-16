@@ -163,3 +163,21 @@ section h2 {
     margin: 0 10px;
   }
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin: 0;
+}
