@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/screenings"
+public_folder: "/images/screenings"
+
+collections:
+  - name: "screenings"
+    label: "Screenings"
+    files:
+      - label: "Screenings List"
+        name: "screenings"
+        file: "content/screenings.json"
+        fields:
+          - label: "Screenings"
+            name: "screenings"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Date", name: "date", widget: "date"}
+              - {label: "Photo", name: "image", widget: "image", required: false}
+              - {label: "Video", name: "video", widget: "file", required: false, hint: "Optional - use instead of a photo"}
+
+  - name: "settings"
+    label: "Contact Info"
+    files:
+      - label: "Contact Details"
+        name: "contact"
+        file: "content/contact.json"
+        fields:
+          - {label: "Phone / WhatsApp", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
