@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hellartag Cinema — Movie Screenings for Schools</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-content">
+    <div class="brand">
+      <img src="images/logo.png" alt="Hellartag Cinema" class="brand-logo">
+      <span class="brand-name">Hellartag Cinema</span>
+    </div>
+    <nav class="main-nav">
+      <a href="#hero">Home</a>
+      <a href="#services">Services</a>
+      <a href="#screenings">Screenings</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1>Big-Screen Movie Nights, <span class="gold">Brought to Your School</span></h1>
+    <p class="hero-sub">We bring full cinema equipment, licensed films, and a real theatre atmosphere straight to your school hall — no projector borrowing, no guesswork.</p>
+    <a href="#contact" class="btn btn-primary">Book a Screening</a>
+  </div>
+</section>
+
+<section class="stats-bar">
+  <div class="stat">
+    <span class="stat-number">50+</span>
+    <span class="stat-label">Schools Served</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">120+</span>
+    <span class="stat-label">Screenings Hosted</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">15,000+</span>
+    <span class="stat-label">Students Reached</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">100%</span>
+    <span class="stat-label">Licensed Content</span>
+  </div>
+</section>
+
+<section class="we-serve">
+  <div class="we-serve-text">
+    <h2>Movie Night, Handled End to End</h2>
+    <p>From setup to teardown, we manage every part of the screening so your staff can focus on the students, not the equipment. We arrive early, test everything, and clean up after — your hall looks exactly as it did before we came.</p>
+    <p>Every film is age-appropriate and properly licensed for public school screening, so there's never a compliance question hanging over movie night.</p>
+  </div>
+  <div class="we-serve-image">
+    <img src="images/we-serve.jpg" alt="Students watching a movie screening in a school hall">
+  </div>
+</section>
+
+<section class="services" id="services">
+  <h2>What We Bring</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Big Screen &amp; Projector</h3>
+      <p>High-lumen projector and large inflatable or fixed screen, sized to your hall or field.</p>
+    </div>
+    <div class="service-card">
+      <h3>Cinema Sound</h3>
+      <p>Full PA sound system tuned for clear dialogue and music, no matter the room size.</p>
+    </div>
+    <div class="service-card">
+      <h3>Licensed Film Library</h3>
+      <p>A curated, age-appropriate catalogue with all public screening rights sorted in advance.</p>
+    </div>
+    <div class="service-card">
+      <h3>Seating &amp; Comfort</h3>
+      <p>Optional bean bags, mats, or chair arrangement help so students settle in properly.</p>
+    </div>
+    <div class="service-card">
+      <h3>Snack Bar Add-On</h3>
+      <p>Popcorn machine and simple concessions available to make it feel like a real outing.</p>
+    </div>
+    <div class="service-card">
+      <h3>Full Setup &amp; Teardown</h3>
+      <p>We arrive early, test everything, run the show, and leave your hall exactly as we found it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="screenings" id="screenings">
+  <h2>Recent Screenings</h2>
+  <div class="screenings-grid" id="screenings-container">
+    <p class="screenings-loading">Loading screenings…</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Book Your Screening</h2>
+  <div class="contact-wrapper">
+    <form class="contact-form" name="booking" method="POST" data-netlify="false">
+      <label for="school-name">School Name</label>
+      <input type="text" id="school-name" name="school-name" required>
+
+      <label for="contact-person">Contact Person</label>
+      <input type="text" id="contact-person" name="contact-person" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date">
+
+      <label for="message">Tell us about your event</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit" class="btn btn-primary">Send Booking Request</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Phone / WhatsApp:</strong> <a id="contact-phone" href="tel:0727471780">0727 471 780</a></p>
+      <p><strong>Email:</strong> <a id="contact-email" href="mailto:hellartagcinema254@gmail.com">hellartagcinema254@gmail.com</a></p>
+      <a id="contact-whatsapp" href="https://wa.me/254727471780" class="btn whatsapp-btn" target="_blank">Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="Hellartag Cinema" class="footer-logo">
+      <p>Hellartag Cinema</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#services">Services</a>
+      <a href="#screenings">Screenings</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-contact">
+      <p><a id="footer-phone" href="tel:0727471780">0727 471 780</a></p>
+      <p><a id="footer-email" href="mailto:hellartagcinema254@gmail.com">hellartagcinema254@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="footer-year"></span> Hellartag Cinema. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
