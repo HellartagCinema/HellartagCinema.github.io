@@ -1,10 +1,10 @@
 backend:
   name: git-gateway
   branch: main
-
+  base_url: https://heroic-granita-106882.netlify.app
+  auth_endpoint: .netlify/identity
 media_folder: "images/screenings"
 public_folder: "/images/screenings"
-
 collections:
   - name: "screenings"
     label: "Screenings"
@@ -21,7 +21,6 @@ collections:
               - {label: "Date", name: "date", widget: "date"}
               - {label: "Photo", name: "image", widget: "image", required: false}
               - {label: "Video", name: "video", widget: "file", required: false, hint: "Optional - use instead of a photo"}
-
   - name: "settings"
     label: "Contact Info"
     files:
