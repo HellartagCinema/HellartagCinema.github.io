@@ -1,31 +1,23 @@
-backend:
-  name: git-gateway
-  branch: main
-  site_domain: heroic-granita-106882.netlify.app
-media_folder: "images/screenings"
-public_folder: "/images/screenings"
-collections:
-  - name: "screenings"
-    label: "Screenings"
-    files:
-      - label: "Screenings List"
-        name: "screenings"
-        file: "content/screenings.json"
-        fields:
-          - label: "Screenings"
-            name: "screenings"
-            widget: "list"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Date", name: "date", widget: "date"}
-              - {label: "Photo", name: "image", widget: "image", required: false}
-              - {label: "Video", name: "video", widget: "file", required: false, hint: "Optional - use instead of a photo"}
-  - name: "settings"
-    label: "Contact Info"
-    files:
-      - label: "Contact Details"
-        name: "contact"
-        file: "content/contact.json"
-        fields:
-          - {label: "Phone / WhatsApp", name: "phone", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+</head>
+<body>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</body>
+</html>
