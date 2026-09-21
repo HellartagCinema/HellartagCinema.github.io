@@ -166,13 +166,16 @@ a { text-decoration: none; }
   margin-bottom: 12px;
 }
 
-.we-serve-image { flex: 1 1 400px; }
-
 .we-serve-image img {
-  width: 100%;
-  border-radius: 8px;
   display: block;
+  width: 80%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 8px;
 }
+
 
 /* Services */
 .services {
