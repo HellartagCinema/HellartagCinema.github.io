@@ -195,6 +195,21 @@ a { text-decoration: none; }
   font-size: 1.1rem;
 }
 
+.service-card h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.service-card h5 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.service-card h6 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
 .service-card p {
   color: #5F5E5A;
   font-size: 0.95rem;
