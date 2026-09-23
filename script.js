@@ -74,9 +74,35 @@ function setupNavToggle() {
   toggle.addEventListener('click', () => nav.classList.toggle('open'));
 }
 
+function setupBookingForm() {
+  const form = document.getElementById('booking-form');
+  if (!form) return;
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const school = document.getElementById('school-name').value;
+    const contact = document.getElementById('contact-person').value;
+    const phone = document.getElementById('phone').value;
+    const date = document.getElementById('date').value;
+    const message = document.getElementById('message').value;
+
+    const text =
+      `New Booking Request%0A` +
+      `School: ${school}%0A` +
+      `Contact Person: ${contact}%0A` +
+      `Phone: ${phone}%0A` +
+      `Preferred Date: ${date}%0A` +
+      `Event Details: ${message}`;
+
+    window.open(`https://wa.me/254727471780?text=${encodeURIComponent(decodeURIComponent(text))}`, '_blank');
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   loadScreenings();
   loadContactInfo();
   setupNavToggle();
+  setupBookingForm();
   document.getElementById('footer-year').textContent = new Date().getFullYear();
 });
