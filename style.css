@@ -177,8 +177,8 @@ a { text-decoration: none; }
 .services-grid {
   max-width: 1500px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 24px;
   text-align: left;
 }
@@ -188,8 +188,6 @@ a { text-decoration: none; }
   border: 1px solid #E5E5E5;
   border-radius: 8px;
   padding: 28px;
-  display: flex;
-  flex-direction: column;
 }
 
 .service-card h3 {
