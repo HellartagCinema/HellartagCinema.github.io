@@ -95,7 +95,7 @@ function setupBookingForm() {
       `Preferred Date: ${date}%0A` +
       `Event Details: ${message}`;
 
-    window.open(`https://wa.me/254727471780?text=${encodeURIComponent(decodeURIComponent(text))}`, '_blank');
+    window.open(`https://wa.me/254769698345?text=${encodeURIComponent(decodeURIComponent(text))}`, '_blank');
   });
 }
 
