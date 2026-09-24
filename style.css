@@ -260,7 +260,7 @@ a { text-decoration: none; }
 }
 
 .movies-grid {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
