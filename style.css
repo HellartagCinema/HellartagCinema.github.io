@@ -248,36 +248,6 @@ a { text-decoration: none; }
   margin-bottom: 16px;
 }
 
-/* Sample films */
-.sample-movies {
-  padding: 80px 24px;
-  text-align: center;
-}
-
-.sample-movies h2 {
-  margin-bottom: 40px;
-  font-size: 1.8rem;
-}
-
-.movies-grid {
-  width: 30%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-
-.movie-card img {
-  width: 75%;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.movie-card h3 {
-  font-size: 0.95rem;
-}
 
 /* Screenings */
 .screenings {
