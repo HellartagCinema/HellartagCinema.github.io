@@ -260,7 +260,7 @@ a { text-decoration: none; }
 }
 
 .movies-grid {
-  max-width: 900px;
+  width: 30%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -268,8 +268,7 @@ a { text-decoration: none; }
 }
 
 .movie-card img {
-  width: 100%;
-  aspect-ratio: 2 / 3;
+  width: 75%;
   object-fit: cover;
   border-radius: 8px;
   display: block;
